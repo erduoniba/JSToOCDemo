@@ -10,10 +10,16 @@
 		04433BA01BFC24E900D3E069 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433B9F1BFC24E900D3E069 /* main.m */; };
 		04433BA31BFC24E900D3E069 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BA21BFC24E900D3E069 /* AppDelegate.m */; };
 		04433BA61BFC24E900D3E069 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BA51BFC24E900D3E069 /* MasterViewController.m */; };
-		04433BA91BFC24E900D3E069 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BA81BFC24E900D3E069 /* DetailViewController.m */; };
 		04433BAC1BFC24E900D3E069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04433BAA1BFC24E900D3E069 /* Main.storyboard */; };
 		04433BAE1BFC24E900D3E069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04433BAD1BFC24E900D3E069 /* Assets.xcassets */; };
 		04433BB11BFC24E900D3E069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04433BAF1BFC24E900D3E069 /* LaunchScreen.storyboard */; };
+		04433BBB1BFC2C3700D3E069 /* WebViewRedirectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BBA1BFC2C3700D3E069 /* WebViewRedirectViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04433BBD1BFC414E00D3E069 /* redirect.html in Resources */ = {isa = PBXBuildFile; fileRef = 04433BBC1BFC414E00D3E069 /* redirect.html */; settings = {ASSET_TAGS = (); }; };
+		04433BBF1BFC482D00D3E069 /* redirect.js in Resources */ = {isa = PBXBuildFile; fileRef = 04433BBE1BFC482D00D3E069 /* redirect.js */; settings = {ASSET_TAGS = (); }; };
+		04433BCE1BFCA47300D3E069 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BCD1BFCA47300D3E069 /* JavaScriptCoreViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04433BD01BFCA4F900D3E069 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04433BCF1BFCA4F800D3E069 /* JavaScriptCore.framework */; };
+		04433BDC1BFEF73400D3E069 /* jsCore.js in Resources */ = {isa = PBXBuildFile; fileRef = 04433BDB1BFEF73400D3E069 /* jsCore.js */; settings = {ASSET_TAGS = (); }; };
+		04433BDF1BFF109E00D3E069 /* NativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BDE1BFF109E00D3E069 /* NativeManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +29,20 @@
 		04433BA21BFC24E900D3E069 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		04433BA41BFC24E900D3E069 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		04433BA51BFC24E900D3E069 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		04433BA71BFC24E900D3E069 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		04433BA81BFC24E900D3E069 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		04433BAB1BFC24E900D3E069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04433BAD1BFC24E900D3E069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04433BB01BFC24E900D3E069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04433BB21BFC24E900D3E069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04433BB91BFC2C3700D3E069 /* WebViewRedirectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewRedirectViewController.h; sourceTree = "<group>"; };
+		04433BBA1BFC2C3700D3E069 /* WebViewRedirectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewRedirectViewController.m; sourceTree = "<group>"; };
+		04433BBC1BFC414E00D3E069 /* redirect.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = redirect.html; sourceTree = "<group>"; };
+		04433BBE1BFC482D00D3E069 /* redirect.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = redirect.js; sourceTree = "<group>"; };
+		04433BCC1BFCA47300D3E069 /* JavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreViewController.h; sourceTree = "<group>"; };
+		04433BCD1BFCA47300D3E069 /* JavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreViewController.m; sourceTree = "<group>"; };
+		04433BCF1BFCA4F800D3E069 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		04433BDB1BFEF73400D3E069 /* jsCore.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jsCore.js; sourceTree = "<group>"; };
+		04433BDD1BFF109E00D3E069 /* NativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeManager.h; sourceTree = "<group>"; };
+		04433BDE1BFF109E00D3E069 /* NativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04433BD01BFCA4F900D3E069 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +60,7 @@
 		04433B921BFC24E800D3E069 = {
 			isa = PBXGroup;
 			children = (
+				04433BCF1BFCA4F800D3E069 /* JavaScriptCore.framework */,
 				04433B9D1BFC24E800D3E069 /* JSToOCDemo */,
 				04433B9C1BFC24E800D3E069 /* Products */,
 			);
@@ -65,12 +81,12 @@
 				04433BA21BFC24E900D3E069 /* AppDelegate.m */,
 				04433BA41BFC24E900D3E069 /* MasterViewController.h */,
 				04433BA51BFC24E900D3E069 /* MasterViewController.m */,
-				04433BA71BFC24E900D3E069 /* DetailViewController.h */,
-				04433BA81BFC24E900D3E069 /* DetailViewController.m */,
 				04433BAA1BFC24E900D3E069 /* Main.storyboard */,
 				04433BAD1BFC24E900D3E069 /* Assets.xcassets */,
 				04433BAF1BFC24E900D3E069 /* LaunchScreen.storyboard */,
 				04433BB21BFC24E900D3E069 /* Info.plist */,
+				04433BCB1BFCA41200D3E069 /* JavaScriptCoreVC */,
+				04433BB81BFC2C1700D3E069 /* WebViewRedirectVC */,
 				04433B9E1BFC24E900D3E069 /* Supporting Files */,
 			);
 			path = JSToOCDemo;
@@ -82,6 +98,29 @@
 				04433B9F1BFC24E900D3E069 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04433BB81BFC2C1700D3E069 /* WebViewRedirectVC */ = {
+			isa = PBXGroup;
+			children = (
+				04433BBC1BFC414E00D3E069 /* redirect.html */,
+				04433BBE1BFC482D00D3E069 /* redirect.js */,
+				04433BB91BFC2C3700D3E069 /* WebViewRedirectViewController.h */,
+				04433BBA1BFC2C3700D3E069 /* WebViewRedirectViewController.m */,
+			);
+			name = WebViewRedirectVC;
+			sourceTree = "<group>";
+		};
+		04433BCB1BFCA41200D3E069 /* JavaScriptCoreVC */ = {
+			isa = PBXGroup;
+			children = (
+				04433BCC1BFCA47300D3E069 /* JavaScriptCoreViewController.h */,
+				04433BCD1BFCA47300D3E069 /* JavaScriptCoreViewController.m */,
+				04433BDD1BFF109E00D3E069 /* NativeManager.h */,
+				04433BDE1BFF109E00D3E069 /* NativeManager.m */,
+				04433BDB1BFEF73400D3E069 /* jsCore.js */,
+			);
+			name = JavaScriptCoreVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +180,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04433BDC1BFEF73400D3E069 /* jsCore.js in Resources */,
 				04433BB11BFC24E900D3E069 /* LaunchScreen.storyboard in Resources */,
+				04433BBF1BFC482D00D3E069 /* redirect.js in Resources */,
 				04433BAE1BFC24E900D3E069 /* Assets.xcassets in Resources */,
+				04433BBD1BFC414E00D3E069 /* redirect.html in Resources */,
 				04433BAC1BFC24E900D3E069 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,10 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04433BCE1BFCA47300D3E069 /* JavaScriptCoreViewController.m in Sources */,
+				04433BBB1BFC2C3700D3E069 /* WebViewRedirectViewController.m in Sources */,
 				04433BA31BFC24E900D3E069 /* AppDelegate.m in Sources */,
 				04433BA61BFC24E900D3E069 /* MasterViewController.m in Sources */,
+				04433BDF1BFF109E00D3E069 /* NativeManager.m in Sources */,
 				04433BA01BFC24E900D3E069 /* main.m in Sources */,
-				04433BA91BFC24E900D3E069 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +315,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.JSToOCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -282,6 +327,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.JSToOCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

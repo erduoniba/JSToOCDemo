@@ -1,0 +1,50 @@
+<!--  redirect.html-->
+<!--  JSToOCDemo-->
+<!---->
+<!--  Created by Harry on 15/11/18.-->
+<!--  Copyright © 2015年 HarryDeng. All rights reserved.-->
+
+<html>
+    <head>
+        <title>HTML中用JS调用OC方法</title>
+        <meta http-equiv="Content-Type"content="text/html; charset=UTF-8">
+            <script>
+                function test()
+                {
+                    alert("test alert...");
+                    return "abcd";
+                }
+            </script>
+            
+            <body>
+                <br/>
+                <br/>
+                <a href ='fdd://alertShow'>alert提示</a>
+                
+                <br><br/>
+                <a href ='fdd://actionsheetShow'>actionsheet提示</a>
+                
+                <br><br/>
+                <a href ="http://xf.fangdd.com/shenzhen/48514.html">深圳中粮世家</a>
+                
+                <br><br/>
+                <button id="hallo" onclick="buttonClick1('JS点击方法传递参数标题', 'JS点击方法传递参数信息')"> JS点击方法传递参数 </button>
+                
+                <br><br/>
+                <button id="hallo" onclick="buttonClick2('JS点击方法传递参数标题', 'JS点击方法传递参数信息')"> JavaScriptCore点击方法传递参数 </button>
+                
+                <br><br/>
+                <button id="hallo" onclick="buttonClick3('JS点击方法传递参数标题', 'JS点击方法传递参数信息')"> JavaScriptCore点击方法传递参数,使用对象方式 </button>
+                
+                <br><br/>
+                <button id="hallo" onclick="buttonClick4('JS点击方法传递参数标题2', 'JS点击方法传递参数信息2')"> JavaScriptCore点击方法传递参数,使用对象方式2 </button>
+                
+                <br><br/>
+                <button id="hallo" onclick="buttonClick5('JS点击1', 'JS点击2', 'JS点击3', 'JS点击4')"> JavaScriptCore点击方法传递多个参数,使用对象方式3 </button>
+                
+                <!--html页面绑定js事件，一般放在href之后，如果放在之前加载JS事件会阻塞界面-->
+                <script type="text/javascript" src="redirect.js"></script>
+                
+            </body>
+ 
+</html>

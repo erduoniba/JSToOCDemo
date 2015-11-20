@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  JavaScriptCoreViewController.h
 //  JSToOCDemo
 //
 //  Created by Harry on 15/11/18.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UITableViewController
+@interface JavaScriptCoreViewController : UIViewController
 
 @end
-
