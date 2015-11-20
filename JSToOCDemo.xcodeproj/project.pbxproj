@@ -20,6 +20,7 @@
 		04433BD01BFCA4F900D3E069 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04433BCF1BFCA4F800D3E069 /* JavaScriptCore.framework */; };
 		04433BDC1BFEF73400D3E069 /* jsCore.js in Resources */ = {isa = PBXBuildFile; fileRef = 04433BDB1BFEF73400D3E069 /* jsCore.js */; settings = {ASSET_TAGS = (); }; };
 		04433BDF1BFF109E00D3E069 /* NativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BDE1BFF109E00D3E069 /* NativeManager.m */; settings = {ASSET_TAGS = (); }; };
+		04433BE11BFF38AF00D3E069 /* js和oc相互调用.md in Sources */ = {isa = PBXBuildFile; fileRef = 04433BE01BFF38AF00D3E069 /* js和oc相互调用.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		04433BDB1BFEF73400D3E069 /* jsCore.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jsCore.js; sourceTree = "<group>"; };
 		04433BDD1BFF109E00D3E069 /* NativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeManager.h; sourceTree = "<group>"; };
 		04433BDE1BFF109E00D3E069 /* NativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeManager.m; sourceTree = "<group>"; };
+		04433BE01BFF38AF00D3E069 /* js和oc相互调用.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "js和oc相互调用.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		04433B9D1BFC24E800D3E069 /* JSToOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04433BE01BFF38AF00D3E069 /* js和oc相互调用.md */,
 				04433BA11BFC24E900D3E069 /* AppDelegate.h */,
 				04433BA21BFC24E900D3E069 /* AppDelegate.m */,
 				04433BA41BFC24E900D3E069 /* MasterViewController.h */,
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04433BCE1BFCA47300D3E069 /* JavaScriptCoreViewController.m in Sources */,
+				04433BE11BFF38AF00D3E069 /* js和oc相互调用.md in Sources */,
 				04433BBB1BFC2C3700D3E069 /* WebViewRedirectViewController.m in Sources */,
 				04433BA31BFC24E900D3E069 /* AppDelegate.m in Sources */,
 				04433BA61BFC24E900D3E069 /* MasterViewController.m in Sources */,
