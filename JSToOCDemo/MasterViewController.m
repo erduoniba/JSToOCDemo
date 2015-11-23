@@ -10,6 +10,7 @@
 
 #import "WebViewRedirectViewController.h"
 #import "JavaScriptCoreViewController.h"
+#import "EasyJSWebViewViewController.h"
 
 @interface MasterViewController ()
 
@@ -33,6 +34,11 @@
     dic[@"data"] = @"JavaScriptCore框架处理";
     dic[@"action"] = @"gotoJavaScriptCore";
     [_objects addObject:dic];
+    
+    dic = [NSMutableDictionary dictionary];
+    dic[@"data"] = @"EasyJSWebView第三方代码处理";
+    dic[@"action"] = @"gotoEasyJSWebView";
+    [_objects addObject:dic];
 }
 
 
@@ -48,6 +54,10 @@
 
 - (void)gotoJavaScriptCore{
     [self.navigationController pushViewController:[JavaScriptCoreViewController new] animated:YES];
+}
+
+- (void)gotoEasyJSWebView{
+   [self.navigationController pushViewController:[EasyJSWebViewViewController new] animated:YES];
 }
 
 

@@ -10,7 +10,7 @@
 
 #import <JavaScriptCore/JavaScriptCore.h>
 
-@protocol NativeManagerExport <JSExport>
+@protocol JSCNativeManagerExport <JSExport>
 
 ///< 对于JS代码是：nativeManager.doSomeThing(s1, s2)，JSExport协议根据JS方法，使用多个:进行分割
 - (void)doSomeThing:(NSString *)someThing :(NSString *)s2;
@@ -25,6 +25,6 @@ JSExportAs(morePraramters,
 
 @end
 
-@interface NativeManager : NSObject <NativeManagerExport>
+@interface JSCNativeManager : NSObject <JSCNativeManagerExport>
 
 @end

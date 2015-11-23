@@ -10,7 +10,7 @@
 
 #import <JavaScriptCore/JavaScriptCore.h>
 
-#import "NativeManager.h"
+#import "JSCNativeManager.h"
 
 @interface JavaScriptCoreViewController () <UIWebViewDelegate>
 
@@ -77,7 +77,7 @@
     };
 /*-----------------------------------------------------------*/
     
-    NativeManager *manager = [NativeManager new];
+    JSCNativeManager *manager = [JSCNativeManager new];
     context[@"nativeManager"] = manager;
 }
 

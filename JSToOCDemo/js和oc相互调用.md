@@ -17,7 +17,7 @@
 
 
 ####2、Hybrid APP问题：
-处理原生代码（OC）和HTML5的交互（JS）
+处理原生代码（OC）和HTML5的交互（JS）问题
 
 
 ####3、JS调用OC代码：
@@ -46,7 +46,7 @@
 
 `zttjhm的专栏` [UIWebView中Html中用JS调用OC方法及OC执行JS代码](http://blog.csdn.net/zttjhm/article/details/43304329/)
 
-HTML代码：
+**HTML代码：**
 	
 	<html>
     <head>
@@ -54,7 +54,7 @@ HTML代码：
         <meta http-equiv="Content-Type"content="text/html; charset=UTF-8">
             <script>
             </script>
-            
+    </head>        
             <body>
                 <br>
                 <br/>
@@ -66,7 +66,7 @@ HTML代码：
 	</html>
 
 	
-iOS代码：
+**iOS代码：**
 
 	#pragma clang diagnostic push
 	#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
@@ -95,6 +95,9 @@ iOS代码：
 	
 	}
 
+优点：`实现JS调用OC代码，使用OC方法来处理JS的对应事件，可读性好`
+
+缺点：`需要两端约定好方法，方法传多个参数不好处理`
 
 
 #####3.3 JavaScriptCore框架：
@@ -133,7 +136,7 @@ JavaScriptCore框架只要引入了5个文件，每个文件里都定义跟文�
 5. JSExport(**神秘的语言穿梭机—JSExport协议**)
 
 
-HTML代码：
+**HTML代码：**
 	
 	<html>
     <head>
@@ -141,6 +144,7 @@ HTML代码：
         <meta http-equiv="Content-Type"content="text/html; charset=UTF-8">
             <script>
             </script>
+    </head>
             
             <body>
                 <br>
@@ -162,7 +166,7 @@ HTML代码：
             </body>
 	</html>
 	
-JS代码：
+**JS代码：**
 
 	function max(a, b){
     	return a>b?a:b;
@@ -305,7 +309,7 @@ OC和HTML上的JS交互
 	@end
 	
 
-iOSlog日志：
+**iOSlog日志：**
 	
 	JSToOCDemo[28592:1486323] JS Array: 21,7,harry up 
 	OC Array: (
@@ -323,9 +327,63 @@ iOSlog日志：
 	JSToOCDemo[28592:1486529] JS点击方法传递参数标题
 	JSToOCDemo[28592:1486529] JS点击方法传递参数信息
 
+优点：`实现JS调用OC代码，使用OC类来管理JS的对应方法，模块化清晰，能处理多个带参数方法`
+
+缺点：`内存问题需要自己处理好`
 
 
+#####3.4 EasyJSWebView第三方代码：
+`github` [dukeland/EasyJSWebView](https://github.com/dukeland/EasyJSWebView)
+
+`开源中国-珲少` [IOS NSInvocation应用与理解](http://my.oschina.net/u/2340880/blog/398552)
+
+`iteye-啸笑天` [Objective C运行时（runtime）技术的几个要点总结](http://justsee.iteye.com/blog/2019541)
 
 
+**HTML代码：**
+
+	<button onClick="javascript:easyJSManager.saveUserInfo('111111', '2222222')">EasyJSWebView点击事件带参数</button>
 
 
+**iOS代码：**
+
+	EasyJSWebView *eWebView = [[EasyJSWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:eWebView];
+    
+    EJSWNativeManager *manager = [EJSWNativeManager new];
+    //将OC管理类对象manager和JS的全局对象easyJSManager绑定
+    [eWebView addJavascriptInterfaces:manager WithName:@"easyJSManager"];
+    eWebView.delegate = self;
+    
+    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"redirect" ofType:@"html"];
+    NSURLRequest *rq = [NSURLRequest requestWithURL:[NSURL URLWithString:htmlPath]];
+    [eWebView loadRequest:rq];
+
+`EJSWNativeManager.h`代码:
+
+	#import <Foundation/Foundation.h>
+	
+	@interface EJSWNativeManager : NSObject
+	- (void)saveUserInfo:(NSString *)name :(NSString *)password;
+	@end
+	
+`EJSWNativeManager.m`代码:
+
+	#import "EJSWNativeManager.h"
+
+	@implementation EJSWNativeManager
+	- (void)saveUserInfo:(NSString *)name :(NSString *)password{
+    	NSLog(@"EasyJSWebView点击事件带参数");
+    	NSLog(@"js 传递 ： %@ %@", name, password);
+    }
+	@end	
+	
+`EasyJSWebView源码`分析：在`UIWebViewDelegate`代理的`webViewDidStartLoad`方法中，根据 **[eWebView addJavascriptInterfaces:manager WithName:@"easyJSManager"]** 方法的OC管理类对象manager和JS的全局对象easyJSManager在document创建新的子节点，该子节点的href对应的链接是由easyJSManager和manager的方法按照**`一定方式拼接`**，在点击HTML上的 “EasyJSWebView点击事件带参数”按钮时，button的onClick事件：javascript:easyJSManager.saveUserInfo会重新 调用OC的`webView: shouldStartLoadWithRequest: navigationType:`方法，这个时候再根据**`一定方式拼接`**来找到该点击事件所附带的信息。
+
+
+优点：`实现JS调用OC代码，使用OC类来管理JS的对应方法，模块化清晰`
+
+缺点：`必须继承EasyJSWebView，这使得它和第三方优秀的webview不好同时使用`
+
+
+####3、OC调用JS代码：

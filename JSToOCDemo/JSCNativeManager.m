@@ -6,9 +6,9 @@
 //  Copyright © 2015年 HarryDeng. All rights reserved.
 //
 
-#import "NativeManager.h"
+#import "JSCNativeManager.h"
 
-@implementation NativeManager
+@implementation JSCNativeManager
 
 - (void)doSomeThing:(NSString *)someThing :(NSString *)s2{
     

@@ -15,6 +15,7 @@
                     return "abcd";
                 }
             </script>
+    </head>
             
             <body>
                 <br/>
@@ -42,6 +43,11 @@
                 <br><br/>
                 <button id="hallo" onclick="buttonClick5('JS点击1', 'JS点击2', 'JS点击3', 'JS点击4')"> JavaScriptCore点击方法传递多个参数,使用对象方式3 </button>
                 
+                <br><br/>
+                <!-- easyJSManager对象调用saveUserInfo方法，传递了 '111111' 和 '2222222' 参数 -->
+                <button onClick="javascript:easyJSManager.saveUserInfo('111111', '2222222')">EasyJSWebView点击事件带参数</button>
+                
+
                 <!--html页面绑定js事件，一般放在href之后，如果放在之前加载JS事件会阻塞界面-->
                 <script type="text/javascript" src="redirect.js"></script>
                 
