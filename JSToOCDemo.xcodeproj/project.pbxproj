@@ -13,6 +13,7 @@
 		042993081C02A630005069C6 /* EasyJSWebViewProxyDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042993041C02A630005069C6 /* EasyJSWebViewProxyDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0429930C1C02A9C8005069C6 /* EasyJSWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429930B1C02A9C8005069C6 /* EasyJSWebViewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0429930F1C02A9E4005069C6 /* EJSWNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429930E1C02A9E4005069C6 /* EJSWNativeManager.m */; settings = {ASSET_TAGS = (); }; };
+		042993341C04585C005069C6 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042993331C04585C005069C6 /* WKWebViewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04433BA01BFC24E900D3E069 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433B9F1BFC24E900D3E069 /* main.m */; };
 		04433BA31BFC24E900D3E069 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BA21BFC24E900D3E069 /* AppDelegate.m */; };
 		04433BA61BFC24E900D3E069 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BA51BFC24E900D3E069 /* MasterViewController.m */; };
@@ -41,6 +42,8 @@
 		0429930B1C02A9C8005069C6 /* EasyJSWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyJSWebViewViewController.m; sourceTree = "<group>"; };
 		0429930D1C02A9E4005069C6 /* EJSWNativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJSWNativeManager.h; sourceTree = "<group>"; };
 		0429930E1C02A9E4005069C6 /* EJSWNativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJSWNativeManager.m; sourceTree = "<group>"; };
+		042993321C04585C005069C6 /* WKWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewViewController.h; sourceTree = "<group>"; };
+		042993331C04585C005069C6 /* WKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewViewController.m; sourceTree = "<group>"; };
 		04433B9B1BFC24E800D3E069 /* JSToOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSToOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04433B9F1BFC24E900D3E069 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04433BA11BFC24E900D3E069 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +105,15 @@
 			name = EasyJSWebView;
 			sourceTree = "<group>";
 		};
+		042993311C045833005069C6 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				042993321C04585C005069C6 /* WKWebViewViewController.h */,
+				042993331C04585C005069C6 /* WKWebViewViewController.m */,
+			);
+			name = WKWebView;
+			sourceTree = "<group>";
+		};
 		04433B921BFC24E800D3E069 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +143,7 @@
 				04433BAD1BFC24E900D3E069 /* Assets.xcassets */,
 				04433BAF1BFC24E900D3E069 /* LaunchScreen.storyboard */,
 				04433BB21BFC24E900D3E069 /* Info.plist */,
+				042993311C045833005069C6 /* WKWebView */,
 				042992FD1C02A619005069C6 /* EasyJSWebView */,
 				04433BCB1BFCA41200D3E069 /* JavaScriptCoreVC */,
 				04433BB81BFC2C1700D3E069 /* WebViewRedirectVC */,
@@ -255,6 +268,7 @@
 				04433BDF1BFF109E00D3E069 /* JSCNativeManager.m in Sources */,
 				0429930F1C02A9E4005069C6 /* EJSWNativeManager.m in Sources */,
 				042993061C02A630005069C6 /* EasyJSDataFunction.m in Sources */,
+				042993341C04585C005069C6 /* WKWebViewViewController.m in Sources */,
 				04433BA01BFC24E900D3E069 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

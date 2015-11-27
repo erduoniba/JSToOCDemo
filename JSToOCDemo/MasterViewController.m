@@ -11,6 +11,7 @@
 #import "WebViewRedirectViewController.h"
 #import "JavaScriptCoreViewController.h"
 #import "EasyJSWebViewViewController.h"
+#import "WKWebViewViewController.h"
 
 @interface MasterViewController ()
 
@@ -60,6 +61,9 @@
    [self.navigationController pushViewController:[EasyJSWebViewViewController new] animated:YES];
 }
 
+- (void)gotoWKWebViewVC{
+    [self.navigationController pushViewController:[WKWebViewViewController new] animated:YES];
+}
 
 #pragma mark - Table View
 
