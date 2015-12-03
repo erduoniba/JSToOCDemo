@@ -16,4 +16,8 @@
     NSLog(@"js 传递 ： %@ %@", name, password);
 }
 
+- (void)ocTojs:(UIWebView *)webView;{
+    [webView stringByEvaluatingJavaScriptFromString:@"ttt()"];
+}
+
 @end

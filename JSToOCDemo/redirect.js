@@ -41,3 +41,7 @@ function buttonClick4(title, message){
 function buttonClick5(s1, s2, s3, s4){
     nativeManager.morePraramters(s1, s2, s3, s4);
 }
+
+function ttt{
+    alert("ttttt");
+}

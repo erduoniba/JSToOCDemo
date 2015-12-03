@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface EJSWNativeManager : NSObject
 
 - (void)saveUserInfo:(NSString *)name :(NSString *)password;
+
+- (void)ocTojs:(UIWebView *)webView;
 
 @end

@@ -31,6 +31,8 @@
     [eWebView addJavascriptInterfaces:manager WithName:@"easyJSManager"];
     eWebView.delegate = self;
     
+    [manager ocTojs:eWebView];
+    
     NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"redirect" ofType:@"html"];
     NSURLRequest *rq = [NSURLRequest requestWithURL:[NSURL URLWithString:htmlPath]];
     [eWebView loadRequest:rq];
