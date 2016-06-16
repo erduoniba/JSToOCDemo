@@ -7,27 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042993051C02A630005069C6 /* easyjs-inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 042992FE1C02A630005069C6 /* easyjs-inject.js */; settings = {ASSET_TAGS = (); }; };
+		042993051C02A630005069C6 /* easyjs-inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 042992FE1C02A630005069C6 /* easyjs-inject.js */; };
 		042993061C02A630005069C6 /* EasyJSDataFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 042993001C02A630005069C6 /* EasyJSDataFunction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		042993071C02A630005069C6 /* EasyJSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042993021C02A630005069C6 /* EasyJSWebView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		042993081C02A630005069C6 /* EasyJSWebViewProxyDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042993041C02A630005069C6 /* EasyJSWebViewProxyDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0429930C1C02A9C8005069C6 /* EasyJSWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429930B1C02A9C8005069C6 /* EasyJSWebViewViewController.m */; settings = {ASSET_TAGS = (); }; };
-		0429930F1C02A9E4005069C6 /* EJSWNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429930E1C02A9E4005069C6 /* EJSWNativeManager.m */; settings = {ASSET_TAGS = (); }; };
-		042993341C04585C005069C6 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042993331C04585C005069C6 /* WKWebViewViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0429930C1C02A9C8005069C6 /* EasyJSWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429930B1C02A9C8005069C6 /* EasyJSWebViewViewController.m */; };
+		0429930F1C02A9E4005069C6 /* EJSWNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0429930E1C02A9E4005069C6 /* EJSWNativeManager.m */; };
+		042993341C04585C005069C6 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042993331C04585C005069C6 /* WKWebViewViewController.m */; };
 		04433BA01BFC24E900D3E069 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433B9F1BFC24E900D3E069 /* main.m */; };
 		04433BA31BFC24E900D3E069 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BA21BFC24E900D3E069 /* AppDelegate.m */; };
 		04433BA61BFC24E900D3E069 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BA51BFC24E900D3E069 /* MasterViewController.m */; };
 		04433BAC1BFC24E900D3E069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04433BAA1BFC24E900D3E069 /* Main.storyboard */; };
 		04433BAE1BFC24E900D3E069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04433BAD1BFC24E900D3E069 /* Assets.xcassets */; };
 		04433BB11BFC24E900D3E069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04433BAF1BFC24E900D3E069 /* LaunchScreen.storyboard */; };
-		04433BBB1BFC2C3700D3E069 /* WebViewRedirectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BBA1BFC2C3700D3E069 /* WebViewRedirectViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04433BBD1BFC414E00D3E069 /* redirect.html in Resources */ = {isa = PBXBuildFile; fileRef = 04433BBC1BFC414E00D3E069 /* redirect.html */; settings = {ASSET_TAGS = (); }; };
-		04433BBF1BFC482D00D3E069 /* redirect.js in Resources */ = {isa = PBXBuildFile; fileRef = 04433BBE1BFC482D00D3E069 /* redirect.js */; settings = {ASSET_TAGS = (); }; };
-		04433BCE1BFCA47300D3E069 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BCD1BFCA47300D3E069 /* JavaScriptCoreViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04433BBB1BFC2C3700D3E069 /* WebViewRedirectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BBA1BFC2C3700D3E069 /* WebViewRedirectViewController.m */; };
+		04433BBD1BFC414E00D3E069 /* redirect.html in Resources */ = {isa = PBXBuildFile; fileRef = 04433BBC1BFC414E00D3E069 /* redirect.html */; };
+		04433BBF1BFC482D00D3E069 /* redirect.js in Resources */ = {isa = PBXBuildFile; fileRef = 04433BBE1BFC482D00D3E069 /* redirect.js */; };
+		04433BCE1BFCA47300D3E069 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BCD1BFCA47300D3E069 /* JavaScriptCoreViewController.m */; };
 		04433BD01BFCA4F900D3E069 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04433BCF1BFCA4F800D3E069 /* JavaScriptCore.framework */; };
-		04433BDC1BFEF73400D3E069 /* jsCore.js in Resources */ = {isa = PBXBuildFile; fileRef = 04433BDB1BFEF73400D3E069 /* jsCore.js */; settings = {ASSET_TAGS = (); }; };
-		04433BDF1BFF109E00D3E069 /* JSCNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BDE1BFF109E00D3E069 /* JSCNativeManager.m */; settings = {ASSET_TAGS = (); }; };
-		04433BE11BFF38AF00D3E069 /* js和oc相互调用.md in Sources */ = {isa = PBXBuildFile; fileRef = 04433BE01BFF38AF00D3E069 /* js和oc相互调用.md */; settings = {ASSET_TAGS = (); }; };
+		04433BDC1BFEF73400D3E069 /* jsCore.js in Resources */ = {isa = PBXBuildFile; fileRef = 04433BDB1BFEF73400D3E069 /* jsCore.js */; };
+		04433BDF1BFF109E00D3E069 /* JSCNativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04433BDE1BFF109E00D3E069 /* JSCNativeManager.m */; };
+		04433BE11BFF38AF00D3E069 /* js和oc相互调用.md in Sources */ = {isa = PBXBuildFile; fileRef = 04433BE01BFF38AF00D3E069 /* js和oc相互调用.md */; };
+		04D8D3C21D12CCF90001615C /* other.js in Resources */ = {isa = PBXBuildFile; fileRef = 04D8D3C11D12CCF90001615C /* other.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		04433BDD1BFF109E00D3E069 /* JSCNativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCNativeManager.h; sourceTree = "<group>"; };
 		04433BDE1BFF109E00D3E069 /* JSCNativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCNativeManager.m; sourceTree = "<group>"; };
 		04433BE01BFF38AF00D3E069 /* js和oc相互调用.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "js和oc相互调用.md"; sourceTree = "<group>"; };
+		04D8D3C11D12CCF90001615C /* other.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = other.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				04433BBE1BFC482D00D3E069 /* redirect.js */,
 				04433BB91BFC2C3700D3E069 /* WebViewRedirectViewController.h */,
 				04433BBA1BFC2C3700D3E069 /* WebViewRedirectViewController.m */,
+				04D8D3C11D12CCF90001615C /* other.js */,
 			);
 			name = WebViewRedirectVC;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				04433BBF1BFC482D00D3E069 /* redirect.js in Resources */,
 				042993051C02A630005069C6 /* easyjs-inject.js in Resources */,
 				04433BAE1BFC24E900D3E069 /* Assets.xcassets in Resources */,
+				04D8D3C21D12CCF90001615C /* other.js in Resources */,
 				04433BBD1BFC414E00D3E069 /* redirect.html in Resources */,
 				04433BAC1BFC24E900D3E069 /* Main.storyboard in Resources */,
 			);

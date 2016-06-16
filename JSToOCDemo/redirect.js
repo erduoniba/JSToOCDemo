@@ -6,6 +6,9 @@
   Copyright © 2015年 HarryDeng. All rights reserved.
 */
 
+//redirect导入 other.js 代码
+document.write("<script language='javascript' src='other.js'></script");
+
 function buttonClick1(title, message){
     
     var iFrame;
@@ -32,21 +35,12 @@ function buttonClick2(title, message){
 var nativeManager; //需要全局申明
 function buttonClick3(title, message){
     nativeManager.doSomeThing('js to os' + title + '  ' , message);
+    
+    ttt();
 }
 
 function buttonClick4(title, message){
     nativeManager.onePushSubmit('js to os' + title + '  ' , message);
 }
 
-function buttonClick5(s1, s2, s3, s4){
-    nativeManager.morePraramters(s1, s2, s3, s4);
-}
 
-function ttt(){
-    alert("ttttt");
-}
-
-var easyJSManager;
-function buttonClick6(title, message){
-    easyJSManager.saveUserInfo(title , message);
-}
