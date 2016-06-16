@@ -65,7 +65,7 @@
     JSValue *vv = [callBackFunc callWithArguments:@[@20, @18]];
     NSDictionary *callBackDic = [vv toDictionary];
     NSLog(@"callBackDic : %@", callBackDic);
-/*-----------------------------------------------------------*/
+    /*-----------------------------------------------------------*/
     
     //此处通过当前webView的键获取到jscontext
     JSContext *context = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
@@ -75,7 +75,7 @@
             NSLog(@"%@", jsVal);
         }
     };
-/*-----------------------------------------------------------*/
+    /*-----------------------------------------------------------*/
     
     JSCNativeManager *manager = [JSCNativeManager new];
     context[@"nativeManager"] = manager;
@@ -83,6 +83,8 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     self.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {

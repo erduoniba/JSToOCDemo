@@ -42,6 +42,11 @@ function buttonClick5(s1, s2, s3, s4){
     nativeManager.morePraramters(s1, s2, s3, s4);
 }
 
-function ttt{
+function ttt(){
     alert("ttttt");
+}
+
+var easyJSManager;
+function buttonClick6(title, message){
+    easyJSManager.saveUserInfo(title , message);
 }
